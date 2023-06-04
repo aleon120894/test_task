@@ -1,5 +1,9 @@
 import os
-from decoder import *
+
+import decoder
+
 
 def main():
-    pass
+
+    decoder_class = decoder.decoder.decodeJson()
+    decoder_class.decoder("{}")
