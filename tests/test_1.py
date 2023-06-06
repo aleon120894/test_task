@@ -1,4 +1,5 @@
 from unittest import TestCase
+from decoder import runner
 
 class test1(TestCase):
 
