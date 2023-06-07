@@ -1,8 +1,7 @@
 import os
-from test_1 import test1
+import test_scenario
 
-def main():
+if __name__ == '__main__':
 
-    test_class = test1()
-    test_class.positive_test()
-    test_class.negative_test()
+    scenario_class = test_scenario.TestScenario()
+    scenario_class.test_1()
