@@ -4,7 +4,10 @@ from decoder import runner
 class test1(TestCase):
 
     def positive_test(self):
-        self.assertTrue()
+
+        result = runner.decoder_class
+        self.assertTrue(result)
+        self.assertEquals()
 
     def negative_test(self):
         self.assertFalse()
