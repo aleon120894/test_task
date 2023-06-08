@@ -5,11 +5,14 @@ class decodeSensor:
 
     def decoder_from_sensor(self, payload):
 
-        field_1 = []
-        field_4 = []
-        field_8 = []
-
         binascii_decode = binascii.unhexlify(payload)
-        print(binascii_decode)
+
+        first_part = binascii_decode[:2]
+        second_part = binascii_decode[2:3]
+        third_part = binascii_decode[3:4]
+
+        print(first_part)
+        print(second_part)
+        print(third_part)
 
 
