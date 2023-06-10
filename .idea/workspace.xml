@@ -8,7 +8,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/decoder/decoder.py" beforeDir="false" afterPath="$PROJECT_DIR$/decoder/decoder.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/runner.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/runner.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_scenario.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_scenario.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_cases/test_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_cases/test_1.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
