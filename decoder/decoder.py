@@ -24,6 +24,8 @@ class decodeSensor:
             field_8,
         ]
 
-        print(decoded_json)
+        decoded = json.dumps(decoded_json, sort_keys=True, indent=4)
+
+        print(decoded)
 
 
