@@ -1,4 +1,6 @@
 import pytest
+import test_cases.test_1
+
 
 class TestScenario():
 
@@ -7,15 +9,11 @@ class TestScenario():
 
     @pytest.fixture
     def test_1(self):
-
-        return "==================="
-        return "Running first test"
-        return "=================="
+        print("===================")
+        print("Running first test")
+        print("==================")
 
     def test_2(self):
-
-        return "==================="
-        return "Running first test"
-        return "=================="
-
-
+        print("===================")
+        print("Running second test")
+        print("==================")
