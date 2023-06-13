@@ -1,6 +1,5 @@
 from multiprocessing.dummy import list
 import binascii
-import base64
 import json
 
 class decodeSensor:
@@ -16,7 +15,7 @@ class decodeSensor:
 
         field_1 = {"field1": first_part}
         field_4 = {"field4": second_part}
-        field_8 = {"field5": third_part}
+        field_8 = {"field8": third_part}
 
         decoded_json = [
             field_1,

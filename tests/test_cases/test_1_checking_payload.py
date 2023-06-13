@@ -1,5 +1,4 @@
 from unittest import TestCase
-# from decoder import runner
 
 class test1(TestCase):
 
@@ -11,4 +10,5 @@ class test1(TestCase):
         self.assertTrue(False)
 
     def empty_test(self):
-        pass
+        result_data = ''
+        self.assertIsNone(result_data)

@@ -1,17 +1,27 @@
 import pytest
-import test_cases.test_1
 
 
 class TestScenario():
 
     def __init__(self):
-        pass
+        self.expected_result = """{'field1': 'High',
+                                   'field10': '00',
+                                   'field2': '00',
+                                   'field3': '00',
+                                   'field4': '10',
+                                   'field5': '01',
+                                   'field6': '01',
+                                   'field7': '01',
+                                   'field8': 'Very Low',
+                                   'field9': '01'}"""
 
     @pytest.fixture
     def test_1(self):
         print("===================")
         print("Running first test")
         print("==================")
+
+        self.test_1.positive_test()
 
     def test_2(self):
         print("===================")
