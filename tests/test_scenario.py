@@ -21,9 +21,11 @@ class TestScenario():
         print("Running first test")
         print("==================")
 
-        self.test_1.positive_test()
+        self.test_1.positive_test(self.expected_result)
 
     def test_2(self):
         print("===================")
         print("Running second test")
         print("==================")
+
+        self.test_1.negative_test(self.expected_result)

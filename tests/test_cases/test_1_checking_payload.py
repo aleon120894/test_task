@@ -2,12 +2,12 @@ from unittest import TestCase
 
 class test1(TestCase):
 
-    def positive_test(self):
+    def positive_test(self, test_data, payload):
 
-        self.assertTrue(True)
+        self.assertEquals(test_data, payload)
 
-    def negative_test(self):
-        self.assertTrue(False)
+    def negative_test(self, test_data, payload):
+        self.assertFalse(test_data == payload)
 
     def empty_test(self):
         result_data = ''
