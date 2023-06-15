@@ -27,4 +27,7 @@ class decodeSensor:
 
         print(decoded)
 
+    def decoder_testing(self, test_data):
+        assert test_data == self.decoder_from_sensor('27C7011D')
+
 
