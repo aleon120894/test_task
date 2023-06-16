@@ -1,6 +1,7 @@
 from unittest import TestCase
 
-class test1(TestCase):
+
+class Test1(TestCase):
 
     def positive_test(self, test_data, payload):
 
