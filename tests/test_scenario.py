@@ -15,7 +15,7 @@ class TestScenario():
                                    'field8': 'Very Low',
                                    'field9': '01'}"""
 
-    @pytest.fixture
+    @pytest.fixture(scope="session")
     def test_1(self):
         print("===================")
         print("Running first test")
