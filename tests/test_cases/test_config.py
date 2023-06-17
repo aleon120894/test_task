@@ -4,10 +4,11 @@ def pytest_addoption(parser):
 
 
 def pytest_generate_tests(metafunc):
-    if "param1" in metafunc.fixturenames:
+
+    if "expected_result" in metafunc.fixturenames:
         if metafunc.config.getoption("all"):
             end = 5
         else:
             end = 2
-        metafunc.parametrize("param1", range(end))
+        metafunc.parametrize("expected_result", range(end))
 
