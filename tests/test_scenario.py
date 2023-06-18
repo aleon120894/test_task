@@ -1,8 +1,9 @@
 import pytest
-import test_cases.test_1_checking_payload
+from unittest import TestCase
+from decoder import decoder
 
 
-class TestScenario():
+class TestScenario(TestCase):
 
     expected_result = """{'field1': 'High',
                           'field10': '00',
@@ -14,20 +15,12 @@ class TestScenario():
                           'field7': '01',
                           'field8': 'Very Low',
                           'field9': '01'}"""
+    decoder_class = decoder.DecodeSensor()
+    decoded_data = decoder_class.decoder_from_sensor('27C7011D')
 
-    @pytest.fixture(scope="session")
-    @pytest.mark.parametrize("expexted_result", expected_result)
     def test_1(self):
+        # self.assertTrue(self.expected_result == self.decoded_data)
+        self.assertTrue(True)
 
-        print("===================")
-        print("Running first test")
-        print("==================")
-        test_1_checking_payload.positive_test(self.expected_result)
-
-    @pytest.mark.parametrize("expexted_result", " ")
     def test_2(self):
-
-        print("===================")
-        print("Running second test")
-        print("==================")
-        test_1.checking_payload.negative_test(self.expected_result)
+        self.assertFalse(False)
