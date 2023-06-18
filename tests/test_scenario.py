@@ -15,6 +15,7 @@ class TestScenario(TestCase):
                           'field7': '01',
                           'field8': 'Very Low',
                           'field9': '01'}"""
+
     decoder_class = decoder.DecodeSensor()
     decoded_data = decoder_class.decoder_from_sensor('27C7011D')
 
