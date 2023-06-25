@@ -25,9 +25,6 @@ class DecodeSensor:
 
         decoded = json.dumps(decoded_json, sort_keys=True, indent=4)
 
-        print(decoded)
-
-    def decoder_testing(self, test_data):
-        assert test_data == self.decoder_from_sensor('27C7011D')
+        return decoded
 
 
