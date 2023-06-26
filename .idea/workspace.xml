@@ -6,8 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="31093a9a-a6d6-4ddb-983c-5c77b32dfea3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/decoder/decoder.py" beforeDir="false" afterPath="$PROJECT_DIR$/decoder/decoder.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/decoder/runner.py" beforeDir="false" afterPath="$PROJECT_DIR$/decoder/runner.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/docker/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/runner.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_cases/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_config/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_cases/test_1_checking_payload.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_cases/test_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_config/test_config.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_scenario.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_scenario.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -33,15 +36,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "develop",
-    "last_opened_file_path": "/Users/oleontiev/Repositorium/learning/test_task"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;develop&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/oleontiev/Repositorium/learning/test_task&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/tests/test_cases" />
