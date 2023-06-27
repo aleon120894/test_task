@@ -75,22 +75,27 @@ class TestScenario(TestCase):
     decoder_class = decoder.DecodeSensor()
     decoded_data = decoder_class.decoder_from_sensor('27C7011D')
 
+    @pytest.fixture
     @pytest.mark.parametrize("decoded_data", valid_data)
     def test_for_all_fields_valid(self):
         self.assertEqual(self.decoded_data, self.valid_data)
 
+    @pytest.fixture
     @pytest.mark.parametrize("decoded_data", data_with_invalid_field_1)
     def test_for_invalid_field_1(self):
         self.assertEqual(self.decoded_data, self.data_with_invalid_field_1)
 
+    @pytest.fixture
     @pytest.mark.parametrize("decoded_data", data_with_invalid_field_4)
     def test_for_invalid_field_4(self):
         self.assertEqual(self.decoded_data, self.data_with_invalid_field_4)
 
+    @pytest.fixture
     @pytest.mark.parametrize("decoded_data", data_with_invalid_field_8)
     def test_for_invalid_field_8(self):
         self.assertEqual(self.decoded_data, self.data_with_invalid_field_8)
 
+    @pytest.fixture
     @pytest.mark.parametrize("decoded_data", data_with_invalid_all_fields)
     def test_for_invalid_all_fields(self):
         self.assertEqual(self.decoded_data, self.data_with_invalid_all_fields)
