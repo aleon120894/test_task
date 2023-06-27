@@ -9,22 +9,7 @@ class DecodeSensor:
         binascii_decode = binascii.unhexlify(payload)
         decoded_data = list(bytearray(binascii_decode))
 
-        first_part = decoded_data[1]
-        second_part = decoded_data[2]
-        third_part = decoded_data[3]
-
-        field_1 = {"field1": first_part}
-        field_4 = {"field4": second_part}
-        field_8 = {"field8": third_part}
-
-        decoded_json = [
-            field_1,
-            field_4,
-            field_8,
-        ]
-
-        decoded = json.dumps(decoded_json, sort_keys=True, indent=4)
-
-        return decoded
+        for data in decoded_data:
+            print(data)
 
 
