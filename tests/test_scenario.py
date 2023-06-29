@@ -6,6 +6,8 @@ from .test_config import test_data
 
 class TestScenario(TestCase):
 
+    # Main scenario for executing tests with positive result (valid data), and different negative results (invalid fields)
+
     decoder_class = decoder.DecodeSensor()
     decoded_data = decoder_class.decoder_from_sensor('27C7011D')
     data_for_tests = test_data.TestData()
@@ -37,6 +39,6 @@ class TestScenario(TestCase):
 
     @pytest.fixture(name="Terst with invalid all fields")
     def test_for_invalid_all_fields(self):
-        invalid_data = self.data_for_tests.get_invalid_data()
+        invalid_data = self.data_for_tests.get_invalid_empty_data()
         self.assertEqual(self.decoded_data, invalid_data)
 
