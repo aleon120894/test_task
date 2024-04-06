@@ -1,8 +1,8 @@
 def decode_payload(payload):
     # Field values dictionaries
-    field1 = {'0': 'Low', '7': 'High'}
-    field4 = {'0': '00', '1': '10', '2': '20', '3': '30', '4': '40', '5': '50', '6': '60', '7': '70'}
-    field8 = {'0': 'Very Low', '2': 'Low', '4': 'Medium', '5': 'High', '7': 'Very High'}
+    field1 = {'000': 'Low', '111': 'High'}
+    field4 = {'000': '00', '001': '10', '010': '20', '011': '30', '100': '40', '101': '50', '110': '60', '111': '70'}
+    field8 = {'000': 'Very Low', '010': 'Low', '100': 'Medium', '101': 'High', '111': 'Very High'}
 
     # Initialize result dictionary
     result = {}
@@ -25,16 +25,10 @@ def decode_payload(payload):
             end_bit = start_bit + size
             param_bits = binary_payload[start_bit:end_bit]
 
-            # Convert binary to decimal
-            param_value = str(int(param_bits, 2))
-
             # Decode parameter value using corresponding dictionary
-            if field_name == 'field1':
-                param_value = field1.get(param_value, 'reserved')
-            elif field_name == 'field4':
-                param_value = field4.get(param_value, 'reserved')
-            elif field_name == 'field8':
-                param_value = field8.get(param_value, 'reserved')
+            param_value = field1.get(param_bits, 'reserved') if field_name == 'field1' else \
+                          field4.get(param_bits, 'reserved') if field_name == 'field4' else \
+                          field8.get(param_bits, 'reserved')
 
             # Add parameter to result dictionary
             result[field_name] = param_value
