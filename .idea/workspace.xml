@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="31093a9a-a6d6-4ddb-983c-5c77b32dfea3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/decoder/decoder.py" beforeDir="false" afterPath="$PROJECT_DIR$/decoder/decoder.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/decoder/runner.py" beforeDir="false" afterPath="$PROJECT_DIR$/decoder/runner.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/docker/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_config/test_config.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_config/test_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_config/test_data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_scenario.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_scenario.py" afterDir="false" />
-    </list>
+    <list default="true" id="31093a9a-a6d6-4ddb-983c-5c77b32dfea3" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,6 +23,10 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 7
+}]]></component>
   <component name="ProjectId" id="2QgwyvszlasMTY2qmIrfbhLmOCf" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -54,6 +49,7 @@
   <component name="RunManager" selected="Python tests.Python tests for test_scenario.TestScenario.test_1">
     <configuration name="runner" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="test_task" />
+      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -75,6 +71,7 @@
     </configuration>
     <configuration name="Python tests for test_scenario.TestScenario.test_1" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="test_task" />
+      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
@@ -92,6 +89,13 @@
         <item itemvalue="Python tests.Python tests for test_scenario.TestScenario.test_1" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-0509580d9d50-746f403e7f0c-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-241.14494.241" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">

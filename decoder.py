@@ -2,7 +2,7 @@ def decode_payload(payload):
     # Field values dictionaries
     field1 = {'000': 'Low', '111': 'High'}
     field4 = {'000': '00', '001': '10', '010': '20', '011': '30', '100': '40', '101': '50', '110': '60', '111': '70'}
-    field8 = {'000': 'Very Low', '010': 'Low', '100': 'Medium', '101': 'High', '111': 'Very High'}
+    field8 = {'000': 'Very Low', '001': 'reserved', '010': 'Low', '011': 'reserved', '100': 'Medium', '101': 'High', '110': 'reserved', '111': 'Very High'}
 
     # Initialize result dictionary
     result = {}
