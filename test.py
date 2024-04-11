@@ -8,6 +8,7 @@ from decoder import decode_payload
     # Add more test cases here if needed
 ])
 
+
 def test_decode_payload(payload, expected_result):
     result = decode_payload(payload)
     print("Expected:", expected_result)
