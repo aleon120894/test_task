@@ -4,5 +4,5 @@
 ### Running Tests
 
     python3 -m pytest
-    pytest test.py
+    pytest test.py test.py
 
