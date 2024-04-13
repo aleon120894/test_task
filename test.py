@@ -14,3 +14,7 @@ def test_decode_payload(payload, expected_result):
     print("Expected:", expected_result)
     print("Actual:", result)
     assert result == expected_result
+
+
+# if __name__ == "__main":
+#     pytest.main()
