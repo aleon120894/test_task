@@ -1,4 +1,5 @@
 def decode_payload(payload):
+
     # Field values dictionaries
     field1 = {'000': 'Low', '111': 'High'}
     field4 = {'000': '00', '001': '10', '010': '20', '011': '30', '100': '40', '101': '50', '110': '60', '111': '70'}
@@ -20,6 +21,7 @@ def decode_payload(payload):
     # Loop through device settings to decode parameters
     for byte_idx, byte_settings in enumerate(device_settings):
         for bit, (size, field_name) in byte_settings.items():
+
             # Get bits corresponding to the parameter
             start_bit = byte_idx * 8 + bit
             end_bit = start_bit + size
@@ -34,6 +36,12 @@ def decode_payload(payload):
             result[field_name] = param_value
 
     return result
+
+# payload = {"27C7011D", {'field1': 'High', 'field10': '00', 'field2': '00', 'field3': '00', 'field4': '10',
+#                   'field5': '01', 'field6': '01', 'field7': '01', 'field8': 'Very Low', 'field9': '01'}}
+#
+# if __name__ == "__main__":
+#     decode_payload(payload)
 
 
 
