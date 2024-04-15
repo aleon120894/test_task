@@ -10,11 +10,14 @@ from decoder import decode_payload
 
 
 def test_decode_payload(payload, expected_result):
-    result = decode_payload(payload)
+
+    payload_string, expected_result = payload
+    result = decode_payload(payload_string)
+
     print("Expected:", expected_result)
     print("Actual:", result)
     assert result == expected_result
 
 
-# if __name__ == "__main":
-#     pytest.main()
+if __name__ == "__main":
+    pytest.main()
