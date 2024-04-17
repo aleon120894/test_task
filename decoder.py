@@ -39,10 +39,24 @@ def decode_payload(payload):
 
 payload = ("27C7011D", {'field1': 'High', 'field10': '00', 'field2': '00', 'field3': '00', 'field4': '10',
                       'field5': '01', 'field6': '01', 'field7': '01', 'field8': 'Very Low', 'field9': '01'})
+
 payload_string, expected_result = payload
 
+def test_decode_payload(payload, expected_result):
+
+    print("Payload: ", payload)
+    payload_string, expected_result = payload
+    print("Payload string: ", payload_string)
+
+    print("Expected result: ", expected_result)
+    result = decode_payload(payload_string)
+
+    print("Expected:", expected_result)
+    print("Actual:", result)
+    assert result == expected_result
+
 if __name__ == "__main__":
-    decode_payload(payload_string)
+    test_decode_payload(payload_string, expected_result)
 
 
 
