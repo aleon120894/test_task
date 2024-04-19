@@ -10,16 +10,10 @@ from decoder import decode_payload
 
 
 def test_decode_payload(payload, expected_result):
-
-    print("Payload: ", payload)
-    payload_string, expected_result = payload
-    print("Payload string: ", payload_string)
-
-    print("Expected result: ", expected_result)
+    payload_string = payload
+    print("Payload: ", payload_string)
+    print("Expected Result: ", expected_result)
     result = decode_payload(payload_string)
-
-    print("Expected:", expected_result)
-    print("Actual:", result)
     assert result == expected_result
 
 
