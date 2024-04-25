@@ -8,17 +8,11 @@ from decoder import decode_payload
     # Add more test cases here if needed
 ])
 
-
 def test_decode_payload(payload, expected_result):
 
-    payload_string = payload
-    print("Payload: ", payload_string)
-    print("Expected Result: ", expected_result)
+    result = decode_payload(payload)
+    print("Payload:", payload)
+    print("Expected Result:", expected_result)
 
-    result = decode_payload(payload_string)
-    print("Result: ", result)
+    print("Result:", result)
     assert result == expected_result
-
-
-if __name__ == "__main":
-    pytest.main()
