@@ -7,8 +7,10 @@ from decoder import decode_payload
     # Add more test cases here if needed
 ])
 def test_decode_payload(payload, expected_result):
+    
     result = decode_payload(payload)
     print("Payload:", payload)
     print("Expected Result is:", expected_result)
+
     print("Result is:", result)
     assert result == expected_result

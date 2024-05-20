@@ -2,7 +2,8 @@ def decode_payload(payload):
     # Field values dictionaries
     field1 = {'000': 'Low', '111': 'High'}
     field4 = {'000': '00', '001': '10', '010': '20', '011': '30', '100': '40', '101': '50', '110': '60', '111': '70'}
-    field8 = {'000': 'Very Low', '001': 'Low', '010': 'Medium', '011': 'High', '100': 'reserved', '101': 'reserved', '110': 'reserved', '111': 'reserved'}
+    field8 = {'000': 'Very Low', '001': 'Low', '010': 'Medium', '011': 'High', '100': 'reserved', '101': 'reserved',
+              '110': 'reserved', '111': 'reserved'}
 
     # Initialize result dictionary
     result = {}
@@ -19,7 +20,9 @@ def decode_payload(payload):
 
     # Loop through device settings to decode parameters
     for byte_idx, byte_settings in enumerate(device_settings):
+
         for bit, (size, field_name) in byte_settings.items():
+
             # Get bits corresponding to the parameter
             start_bit = byte_idx * 8 + bit
             end_bit = start_bit + size
@@ -33,7 +36,7 @@ def decode_payload(payload):
             elif field_name == 'field8':
                 param_value = field8.get(param_bits, 'reserved')
             else:
-                param_value = param_bits
+                param_value = param_bits.zfill(2)  # Zero pad the binary string to ensure two characters
 
             # Add parameter to result dictionary
             result[field_name] = param_value
