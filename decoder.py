@@ -31,12 +31,16 @@ def decode_payload(payload):
             # Decode parameter value using corresponding dictionary
             if field_name == 'field1':
                 param_value = field1.get(param_bits, 'reserved')
+
             elif field_name == 'field4':
                 param_value = field4.get(param_bits, 'reserved')
+
             elif field_name == 'field8':
                 param_value = field8.get(param_bits, 'reserved')
+
             else:
-                param_value = param_bits.zfill(2)  # Zero pad the binary string to ensure two characters
+                # Default case for fields without specific mapping
+                param_value = param_bits.zfill(2)
 
             # Add parameter to result dictionary
             result[field_name] = param_value
